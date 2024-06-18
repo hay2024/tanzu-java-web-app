@@ -1,0 +1,20 @@
+id: 9353a334-ad0c-4bcf-8adc-52ce92ad7c41
+timestamp: 2024-06-18T14:58:44.096Z
+source: VSCODE
+username: hayk
+options:
+  projectName: tanzu-java-web-app
+  javaVersion: 17
+  buildTool: maven
+  ide: intellij
+  nativeBuild: false
+  includeBuildToolWrapper: true
+  includeDevContainer: false
+accelerator:
+  name: tanzu-java-web-app
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: devcontainer
+  - name: java-version
+  - name: tap-workload
