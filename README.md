@@ -50,3 +50,16 @@ You can use the IDE plugins for VSCode or IntelliJ IDEA to enable live update. Y
         to your Tiltfile. Otherwise, switch k8s contexts and restart Tilt.
         ```
 3. You can hit the spacebar to open the Tilt UI in a browser. 
+
+## Deploying the sample on TAP built as a GraalVM native image
+
+You can build and deploy the `config/workload-native.yaml` file using the Apply Workload option for Tanzu Developer Tools in your IDE.
+
+You can also use the Tanzu CLI to build and deploy this sample as a GraalVM native image.
+With the Tanzu CLI, you can use the following command:
+
+```sh
+tanzu apps workload create tanzu-java-web-app \
+  --file ./config/workload-native.yaml \
+  --local-path .
+```
